@@ -1,38 +1,129 @@
 .App {
-  text-align: center;
+  box-sizing: border-box;
+  min-width: 1450px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  margin: 0 auto;
+  padding: 70px 5%;
+  background-color: midnightblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header h1 {
+  margin: 0;
+  padding: 0;
   color: white;
+  vertical-align: middle;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  margin: 0 auto;
+  max-width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  margin-right: 5px;
+}
+.link-home {
+  color: steelblue;
+  text-decoration: 1px dashed underline;
+}
+
+.top {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.form-api {
+  float: right;
+  width: 30%;
+  min-width: 500px;
+  text-align: right;
+}
+
+.form-dates {
+  width: 60%;
+  min-width: 820px;
+}
+
+form p {
+  border-bottom: 1px solid black;
+}
+input {
+  width: 290px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-right: 5px;
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
+}
+button {
+  background-color:transparent;
+  border: 1px solid darkslategray;
+  border-radius: 99em;
+  color: darkslategray;
+  padding: 5px 15px;
+  font-size: 16px;
+}
+button:hover {
+  background-color:steelblue;
+  border: 1px solid transparent;
+  color: white;
+  transition: 0.2s ease;
+}
+button:active, button:focus{
+  outline: none;
+}
+
+.table a {
+  text-decoration: underline 1px dashed;
+  color: steelblue;
+}
+.table a:hover{
+  color: midnightblue;
+}
+.table tbody tr:nth-of-type(odd) {
+  border-spacing: 0;
+  background-color: rgb(238, 238, 238);
+}
+.table tbody td {
+  padding: 5px 20px;
+  border-top: 1px solid darkslategray;
+}
+.td-status, .td-winner {
+  text-transform: lowercase;
+}
+
+.year-links {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  border-left: 1px solid black;
+}
+.year-links a {
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+  padding: 5px;
+  /* padding: 10px 30px; */
+  width: 200px;
+  height:50px;
+  text-decoration: none;
+  color: black;
+}
+
+.year-links a:hover {
+  color: white;
+  background-color: steelblue;
 }
