@@ -14,7 +14,6 @@
   padding: 70px 5%;
   background-color: midnightblue;
 }
-
 .header h1 {
   margin: 0;
   padding: 0;
@@ -47,7 +46,6 @@ a {
   min-width: 500px;
   text-align: right;
 }
-
 .form-dates {
   width: 60%;
   min-width: 820px;
@@ -59,12 +57,13 @@ form p {
 input {
   width: 290px;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
   margin-right: 5px;
   font-size: 16px;
 }
 input:focus {
   outline: none;
+  border-bottom: 1px solid black;
 }
 button {
   background-color:transparent;
